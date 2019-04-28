@@ -9,3 +9,12 @@ To re-build the site:
 npm install
 npm run build
 ```
+
+Credit to Khan Academy for providing the website template.
+
+Khan Academy Github Page: khan.github.io
+
+Khan Academy: www.khanacademy.org
+
+Khan Academy is a 501(c)(3) nonprofit organization. [Donate](https://www.khanacademy.org/donate) or [volunteer](https://www.khanacademy.org/contribute) today!
+
