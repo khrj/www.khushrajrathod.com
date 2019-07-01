@@ -38,6 +38,11 @@ var entries = [
     projectName: "Hello Scratch",
     language: "Scratch 2.0",
     description: "The classic hello world - redesigned in scratch"
+}, {
+    projectSlug: "cake",
+    projectName: "Bake My Dreams",
+    language: "HTML, Javascript, CSS, Markdown",
+    description: "Rintu Rathod's Website - Made using Github Pages"
 }
 ];
 

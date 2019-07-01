@@ -46,7 +46,7 @@ function timeAgoInWords(ts) {
  * making 2n requests to the API, reloading the page a couple of times causes
  * the API requests to fail.  The data doesn't change often, so make the
  * request and store the result in localStorage.  If a future request fails,
- * pull it out of loalStorage so the page doesn't fail.
+ * pull it out of localStorage so the page doesn't fail.
  */
 function getJSONFallbackToCache(url, handler) {
     var errorHandler = function() {

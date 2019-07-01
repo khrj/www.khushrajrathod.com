@@ -108,6 +108,10 @@ body {
     background-image: url('../img/scratch.png');
 }
 
+.logo-cake {
+    background-image: url('../img/cake.png');
+}
+
 
 .content {
     position: absolute;
