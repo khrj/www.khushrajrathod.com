@@ -3,4 +3,4 @@
 cd $1
 git add -A
 git commit -m "BSS Auto-Update"
-git push origin master
+git push origin master -f
