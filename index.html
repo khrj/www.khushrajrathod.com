@@ -1,131 +1,268 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Holyprogrammer</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
-<link rel="stylesheet" href="styles.css">
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147993058-1"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-      
-        gtag('config', 'UA-147993058-1');
-    </script>
-    <script>
-        /* ---- particles.js config ---- */
-        particlesJS("particles-js", particle-config.json);
-    </script>
-</head>
-
-<body>
-    <section class="gradient" style="height: 100px;filter: hue-rotate(146deg);padding-top: 25px;text-align: center;">
-        <h1 style="text-align: center;filter: hue-rotate(118deg);"><strong>Holyprogrammer</strong></h1>
-    </section>
-    <section class="portfolio-block block-intro" style="filter: hue-rotate(0deg);">
-        <div class="container">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <title>Home - Holyprogrammer</title>
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+      <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+      <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+      <link rel="stylesheet" href="styles.css">
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147993058-1"></script>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-147993058-1');
+      </script>
+      <script>
+         /* ---- particles.js config ---- */
+         particlesJS("particles-js", {
+         "particles": {
+         "number": {
+         "value": 80,
+         "density": {
+         "enable": true,
+         "value_area": 800
+         }
+         },
+         "color": {
+         "value": "#ffffff"
+         },
+         "shape": {
+         "type": "circle",
+         "stroke": {
+         "width": 0,
+         "color": "#000000"
+         },
+         "polygon": {
+         "nb_sides": 5
+         },
+         "image": {
+         "src": "img/github.svg",
+         "width": 100,
+         "height": 100
+         }
+         },
+         "opacity": {
+         "value": 0.5,
+         "random": false,
+         "anim": {
+         "enable": false,
+         "speed": 1,
+         "opacity_min": 0.1,
+         "sync": false
+         }
+         },
+         "size": {
+         "value": 3,
+         "random": true,
+         "anim": {
+         "enable": true,
+         "speed": 40,
+         "size_min": 0.1,
+         "sync": false
+         }
+         },
+         "line_linked": {
+         "enable": true,
+         "distance": 150,
+         "color": "#ffffff",
+         "opacity": 0.4,
+         "width": 1
+         },
+         "move": {
+         "enable": true,
+         "speed": 6,
+         "direction": "top",
+         "random": false,
+         "straight": false,
+         "out_mode": "out",
+         "bounce": false,
+         "attract": {
+         "enable": false,
+         "rotateX": 600,
+         "rotateY": 1200
+         }
+         }
+         },
+         "interactivity": {
+         "detect_on": "canvas",
+         "events": {
+         "onhover": {
+         "enable": true,
+         "mode": "repulse"
+         },
+         "onclick": {
+         "enable": true,
+         "mode": "bubble"
+         },
+         "resize": true
+         },
+         "modes": {
+         "grab": {
+         "distance": 400,
+         "line_linked": {
+          "opacity": 1
+         }
+         },
+         "bubble": {
+         "distance": 207.079689136843,
+         "size": 20.301930307533627,
+         "duration": 0.3248308849205381,
+         "opacity": 8,
+         "speed": 3
+         },
+         "repulse": {
+         "distance": 200,
+         "duration": 0.4
+         },
+         "push": {
+         "particles_nb": 4
+         },
+         "remove": {
+         "particles_nb": 2
+         }
+         }
+         },
+         "retina_detect": true
+         });
+      </script>
+      <style>
+         /* ---- particles.js container ---- */
+         #particles-js {
+         height: 100%;
+         background-color: rgb(69, 163, 229);
+         animation: 14s ease 0s infinite alternate none running bg;
+         }
+         @keyframes bg {
+         25% {
+         background: rgb(65, 196, 222);
+         }
+         50% {
+         background: rgb(140, 199, 63);
+         }
+         75% {
+         background: rgb(243, 211, 51);
+         }
+         100% {
+         background: rgb(247, 142, 86);
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <section class="gradient" style="height: 100px;filter: hue-rotate(146deg);padding-top: 25px;text-align: center;">
+         <h1 style="text-align: center;filter: hue-rotate(118deg);"><strong>Holyprogrammer</strong></h1>
+      </section>
+      <section class="portfolio-block block-intro" style="filter: hue-rotate(0deg);">
+         <div class="container">
             <div class="pulse animated avatar" style="background-image: url(&quot;assets/img/avatars/avatar.jpeg&quot;);filter: contrast(82%) grayscale(0%);/*width: 300px;*//*height: 300px;*//*border-radius: 100px;*/"></div>
             <div class="about-me">
-                <p>Hello! I am&nbsp;<strong>Khushraj Rathod</strong>. I am a student, and I love experimenting with new tech. I call myself Holyprogrammer.</p>
+               <p>Hello! I am&nbsp;<strong>Khushraj Rathod</strong>. I am a student, and I love experimenting with new tech. I call myself Holyprogrammer.</p>
             </div>
             <section class="portfolio-block projects-cards" style="padding: 0px;margin-top: 100px;/*margin-right: 100px;*/">
-                <div class="container" style="/*padding-left: 110px;*//*padding-left: 0;*//*padding-right: 0;*/">
-                    <div class="heading">
-                        <h2>Free open Source PROJECTS</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4 offset-0">
-                            <div class="card border-0"><a href="http://github.com/holyprogrammer/IrritatorApp"><img class="card-img-top scale-on-hover" src="assets/img/nature/irritator.jpg" alt="Card Image"></a>
-                                <div class="card-body">
-                                    <h6><a href="http://github.com/holyprogrammer/IrritatorApp">Irritator</a></h6>
-                                    <p class="text-muted card-text">An android app to trouble music-haters</p>
-                                </div>
-                            </div>
+               <div class="container" style="/*padding-left: 110px;*//*padding-left: 0;*//*padding-right: 0;*/">
+                  <div class="heading">
+                     <h2>Free open Source PROJECTS</h2>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-6 col-lg-4 offset-0">
+                        <div class="card border-0">
+                           <a href="http://github.com/holyprogrammer/IrritatorApp"><img class="card-img-top scale-on-hover" src="assets/img/nature/irritator.jpg" alt="Card Image"></a>
+                           <div class="card-body">
+                              <h6><a href="http://github.com/holyprogrammer/IrritatorApp">Irritator</a></h6>
+                              <p class="text-muted card-text">An android app to trouble music-haters</p>
+                           </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card border-0"><a href="http://github.com/holyprogrammer/ScratchHelloWorldProject"><img class="card-img-top scale-on-hover" src="assets/img/nature/helloscratch.jpg" alt="Card Image"></a>
-                                <div class="card-body">
-                                    <h6><a href="http://github.com/holyprogrammer/ScratchHelloWorldProject">Hello Scratch</a></h6>
-                                    <p class="text-muted card-text">The classic hello world - completely redesigned in scratch<br></p>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div class="card border-0">
+                           <a href="http://github.com/holyprogrammer/ScratchHelloWorldProject"><img class="card-img-top scale-on-hover" src="assets/img/nature/helloscratch.jpg" alt="Card Image"></a>
+                           <div class="card-body">
+                              <h6><a href="http://github.com/holyprogrammer/ScratchHelloWorldProject">Hello Scratch</a></h6>
+                              <p class="text-muted card-text">The classic hello world - completely redesigned in scratch<br></p>
+                           </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card border-0"><img class="card-img-top w-100 d-block card-img-top scale-on-hover" src="assets/img/nature/pnc.jpg" alt="Card Image">
-                                <div class="card-body"><h6>Prime Number Calculator</h6><p class="text-muted card-text">A tool to work with prime numbers - For <a href="http://github.com/holyprogrammer/PrimeNumberCalculatorWindows"><em><span style="text-decoration: underline;">Windows</span></em></a> and <a href="http://github.com/holyprogrammer/PrimeNumberCalculatorAndroid"><em><span style="text-decoration: underline;">Android</span></em></a></p></div>
-                            </div>
+                     </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div class="card border-0">
+                           <img class="card-img-top w-100 d-block card-img-top scale-on-hover" src="assets/img/nature/pnc.jpg" alt="Card Image">
+                           <div class="card-body">
+                              <h6>Prime Number Calculator</h6>
+                              <p class="text-muted card-text">A tool to work with prime numbers - For <a href="http://github.com/holyprogrammer/PrimeNumberCalculatorWindows"><em><span style="text-decoration: underline;">Windows</span></em></a> and <a href="http://github.com/holyprogrammer/PrimeNumberCalculatorAndroid"><em><span style="text-decoration: underline;">Android</span></em></a></p>
+                           </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card border-0"><a href="http://github.com/holyprogrammer/TicTacToe"><img class="card-img-top scale-on-hover" src="assets/img/nature/tictactoe.JPG" alt="Card Image"></a>
-                                <div class="card-body">
-                                    <h6><a href="#">Tic Tac Toe<br></a></h6>
-                                    <p class="text-muted card-text">Simple Tic Tac Toe Game in C++<br></p>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div class="card border-0">
+                           <a href="http://github.com/holyprogrammer/TicTacToe"><img class="card-img-top scale-on-hover" src="assets/img/nature/tictactoe.JPG" alt="Card Image"></a>
+                           <div class="card-body">
+                              <h6><a href="#">Tic Tac Toe<br></a></h6>
+                              <p class="text-muted card-text">Simple Tic Tac Toe Game in C++<br></p>
+                           </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card border-0"><a href="http://github.com/holyprogrammer/WaveGenerator"><img class="card-img-top scale-on-hover" src="assets/img/nature/wave.jpg" alt="Card Image"></a>
-                                <div class="card-body">
-                                    <h6><a href="http://github.com/holyprogrammer/WaveGenerator">Wave Generator</a></h6>
-                                    <p class="text-muted card-text">An app that generates a wave of words when given input (in c++)<br></p>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div class="card border-0">
+                           <a href="http://github.com/holyprogrammer/WaveGenerator"><img class="card-img-top scale-on-hover" src="assets/img/nature/wave.jpg" alt="Card Image"></a>
+                           <div class="card-body">
+                              <h6><a href="http://github.com/holyprogrammer/WaveGenerator">Wave Generator</a></h6>
+                              <p class="text-muted card-text">An app that generates a wave of words when given input (in c++)<br></p>
+                           </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card border-0"><a href="https://holyprogrammer.github.io/jsart/"><img class="card-img-top scale-on-hover" src="assets/img/nature/jsart.png" alt="Card Image"></a>
-                                <div class="card-body">
-                                    <h6><a href="https://holyprogrammer.github.io/jsart/">Javascript Art</a></h6>
-                                    <p class="text-muted card-text">Designs made from JavaScript</p>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div class="card border-0">
+                           <a href="https://holyprogrammer.github.io/jsart/"><img class="card-img-top scale-on-hover" src="assets/img/nature/jsart.png" alt="Card Image"></a>
+                           <div class="card-body">
+                              <h6><a href="https://holyprogrammer.github.io/jsart/">Javascript Art</a></h6>
+                              <p class="text-muted card-text">Designs made from JavaScript</p>
+                           </div>
                         </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </section>
-        </div>
-    </section>
-    <section class="portfolio-block website gradient" style="filter: hue-rotate(146deg);">
-        <div class="container" style="border-collapse: collapse;">
+         </div>
+      </section>
+      <section class="portfolio-block website gradient" style="filter: hue-rotate(146deg);">
+         <div class="container" style="border-collapse: collapse;">
             <div class="row align-items-center">
-                <div class="col-md-12 col-lg-5 offset-lg-1 text">
-                    <h3>www.rinturathod.com</h3>
-                    <p>Rintu Rathod's Website - Rintu Rathod is trained as a commercial artist and now she is a &nbsp;passionate baker as well. Her speciality is life size cake and chocolate sculptures.<br></p>
-                </div>
-                <div class="col-md-12 col-lg-5">
-                    <div class="portfolio-laptop-mockup">
-                        <div class="screen">
-                            <div class="screen-content" style="background-image: url(&quot;assets/img/avatars/tech/website.png&quot;);filter: hue-rotate(223deg);"></div>
-                        </div>
-                        <div class="keyboard"></div>
-                    </div>
-                </div>
+               <div class="col-md-12 col-lg-5 offset-lg-1 text">
+                  <h3>www.rinturathod.com</h3>
+                  <p>Rintu Rathod's Website - Rintu Rathod is trained as a commercial artist and now she is a &nbsp;passionate baker as well. Her speciality is life size cake and chocolate sculptures.<br></p>
+               </div>
+               <div class="col-md-12 col-lg-5">
+                  <div class="portfolio-laptop-mockup">
+                     <div class="screen">
+                        <div class="screen-content" style="background-image: url(&quot;assets/img/avatars/tech/website.png&quot;);filter: hue-rotate(223deg);"></div>
+                     </div>
+                     <div class="keyboard"></div>
+                  </div>
+               </div>
             </div>
             <div class="row" style="margin-top: 20px;">
-                <div class="col-md-4 offset-sm-5 offset-md-5 offset-lg-8 offset-xl-8"><a href="https://rinturathod.github.io"><button class="btn btn-primary" type="button" style="filter: hue-rotate(211deg);">View</button></a></div>
+               <div class="col-md-4 offset-sm-5 offset-md-5 offset-lg-8 offset-xl-8"><a href="https://rinturathod.github.io"><button class="btn btn-primary" type="button" style="filter: hue-rotate(211deg);">View</button></a></div>
             </div>
-        </div>
-    </section>
-    <footer class="page-footer">
-        <div class="container">
+         </div>
+      </section>
+      <footer class="page-footer">
+         <div class="container">
             <div class="social-icons"><a href="https://github.com/Holyprogrammer"><i class="icon ion-social-github"></i></a><a href="mailto:khushraj2005@gmail.com"><i class="icon ion-android-mail"></i></a><a href="https://wa.me/919324028121"><i class="icon ion-social-whatsapp"></i></a>
-                <a
-                    href="https://t.me/KhushrajRathod"><i class="fab fa-telegram-plane"></i></a>
+               <a
+                  href="https://t.me/KhushrajRathod"><i class="fab fa-telegram-plane"></i></a>
             </div>
-        </div>
-    </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-    <script src="assets/js/theme.js"></script>
-</body>
-
+         </div>
+      </footer>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+      <script src="assets/js/theme.js"></script>
+   </body>
 </html>
