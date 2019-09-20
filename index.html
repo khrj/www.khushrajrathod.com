@@ -20,7 +20,39 @@
          
          gtag('config', 'UA-147993058-1');
       </script>
-      <script>
+      <style>
+         /* ---- particles.js container ---- */
+         body{
+         margin: 0;
+         }
+         #particles-js {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         background-color: rgb(69, 163, 229);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: 50% 50%;
+         animation: 14s ease 0s infinite alternate none running bg;
+         }
+         @keyframes bg {
+         25% {
+         background: rgb(65, 196, 222);
+         }
+         50% {
+         background: rgb(140, 199, 63);
+         }
+         75% {
+         background: rgb(243, 211, 51);
+         }
+         100% {
+         background: rgb(247, 142, 86);
+         }
+         }
+      </style>
+   </head>
+   <body>
+            <script>
          /* ---- particles.js config ---- */
          particlesJS("particles-js", {
          "particles": {
@@ -133,45 +165,10 @@
          "retina_detect": true
          });
       </script>
-      <style>
-         /* ---- particles.js container ---- */
-         body{
-         margin: 0;
-         }
-         #particles-js {
-         position: absolute;
-         width: 100%;
-         height: 100%;
-         background-color: rgb(69, 163, 229);
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-position: 50% 50%;
-         animation: 14s ease 0s infinite alternate none running bg;
-         }
-         @keyframes bg {
-         25% {
-         background: rgb(65, 196, 222);
-         }
-         50% {
-         background: rgb(140, 199, 63);
-         }
-         75% {
-         background: rgb(243, 211, 51);
-         }
-         100% {
-         background: rgb(247, 142, 86);
-         }
-         }
-         #relative {
-            position: relative;
-         }
-      </style>
-   </head>
-   <body>
+      <div id="particles-js"></div>
       <section class="gradient" style="height: 100px;filter: hue-rotate(146deg);padding-top: 25px;text-align: center;">
          <h1 style="text-align: center;filter: hue-rotate(118deg);"><strong>Holyprogrammer</strong></h1>
       </section>
-      <div id="relative">
          <section class="portfolio-block block-intro" style="filter: hue-rotate(0deg);"  id="particles-js">
             <div class="container">
                <div class="pulse animated avatar" style="background-image: url(&quot;assets/img/avatars/avatar.jpeg&quot;);filter: contrast(82%) grayscale(0%);/*width: 300px;*//*height: 300px;*//*border-radius: 100px;*/"></div>
@@ -242,8 +239,7 @@
                   </div>
                </section>
             </div>
-         </section>
-      </div>
+      </section>
       <section class="portfolio-block website gradient" style="filter: hue-rotate(146deg);">
          <div class="container" style="border-collapse: collapse;">
             <div class="row align-items-center">
