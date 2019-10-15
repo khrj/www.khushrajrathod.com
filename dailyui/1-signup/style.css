@@ -7,7 +7,7 @@ body {
 
 .grid-container {
 	display: grid;
-	padding: 0px 20px 0px 20px;
+	padding: 0cm 5mm 0mm 5mm;
 	grid-template-columns: 90% 10%;
 	grid-template-rows: 28% 56% 0% 5% 11%;
 	grid-auto-flow: column;
@@ -21,8 +21,8 @@ body {
 }
 
 #center {
-	max-width: 500px;
-	max-height: 80px;
+	max-width: 132mm;
+	max-height: 21mm;
 	width: 100%;
 	height: 100%;
 }
@@ -32,7 +32,7 @@ body {
 	border: none;
 	width: 100%;
 	height: 100%;
-	font-size: 20px;
+	font-size: 5mm;
 	font-weight: bold;
 	outline: 0;
 }
@@ -57,12 +57,12 @@ body {
 	background-color: transparent;
 	grid-column: 2;
 	grid-row: 1 / 6;
-	font-size: 40px;
+	font-size: 10mm;
 	color: #25a3ff;
 	cursor: pointer;
 	outline: none;
   position: relative;
-	left: 10px;
+	left: 2mm;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -79,17 +79,17 @@ body {
 
 #placeholder {
 	position: relative;
-	font-size: 23px;
-	bottom: 40px;
+	font-size: 6mm;
+	bottom: 10mm;
 	transition: .2s ease-in-out;
 	pointer-events: none;
 }
 
 #container input:valid + #placeholder {
-	font-size: 13px;
+	font-size: 3.5mm;
 	font-weight: normal;
 	color: #9e9e9e;
-	bottom: 57px;
+	bottom: 15mm;
 }
 
 #message {
@@ -99,7 +99,7 @@ body {
   opacity: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 158mm) {
   #message {
     font-size: 7vw;
   }
