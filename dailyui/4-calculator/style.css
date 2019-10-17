@@ -1,0 +1,63 @@
+#container {
+    --background-color: #000;
+    --text-color: #fefefe;
+
+    --numbers-color: #333;
+    --numbers-selected-color: #737373;
+
+    --signs-color: #fe9e09;
+    --signs-selected-color: #fff;
+
+    --controls-color: #a5a5a5;
+    --controls-selected-color: #d9d9d9;
+
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+}
+
+body, html, #container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    margin: 0;
+    font-size: 40px;
+    font-family: "Helvetica Neue";
+}
+
+#container {
+    width: 500px;
+    height: 750px;
+}
+
+.control {
+    background-color: var(--controls-color);
+}
+
+.sign {
+    background-color: var(--signs-color);
+}
+
+.number {
+    background-color: var(--numbers-color);
+}
+
+#result {
+    grid-column: 1 / 5;
+}
+
+#zero {
+    grid-column: 1 / 3;
+}
+
+.button {
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+}
+
+.number, .sign, .control {
+    height: 80px;
+    width: 80px;
+}
