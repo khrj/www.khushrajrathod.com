@@ -26,7 +26,7 @@ $("input").keypress(function (key) {
 
 function progress() {
     percent += each;
-    $("#progress").css("width", percent + "%"); 
+    $("#progress").css("width", percent + "%");
     $("#line").css("background-color", "#25a3ff");
     $("#next").css("color", "#25a3ff");
     $("#progress").css("background-color", "#00ae1b");
@@ -41,7 +41,7 @@ function create() {
 
 function next() {
     if (checkValidity()) {
-      responses.push($("#input").val());
+        responses.push($("#input").val());
         $("#input").val("");
         progress();
         current += 1;
@@ -67,7 +67,7 @@ function next() {
             // hide
             $("#center").css("transition", "1s ease-in-out");
             setTimeout(function () {
-              $("#container").css("padding", "0px");
+                $("#container").css("padding", "0px");
             }, 200);
             setTimeout(function () {
                 $("#center").css("width", "0%");
@@ -78,7 +78,7 @@ function next() {
 
             $("#message").html("Welcome " + responses[0] + " " + responses[1] + " &lt;" + responses[2] + "&gt;");
             setTimeout(function () {
-              $("#message").css('animation', "opacity forwards 2s")
+                $("#message").css('animation', "opacity forwards 2s")
             }, 1500);
         }
 
@@ -86,7 +86,7 @@ function next() {
         $("#next").css("color", "#ff2d26");
         $("#progress").css("background-color", "#ff2d26");
         animateCSS('#container', 'shake');
-        
+
     }
 }
 
@@ -112,6 +112,6 @@ function animateCSS(element, animationName, callback) {
     node.addEventListener('animationend', handleAnimationEnd)
 }
 
-$(function(){
-  create();
+$(function () {
+    create();
 });
