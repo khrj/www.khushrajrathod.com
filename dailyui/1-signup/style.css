@@ -21,20 +21,20 @@ body {
   box-sizing: border-box;
 }
 
-#center {
-  min-height: 13vh !important;
-  max-height: 80px;
-  width: 100%;
-  height: 100%;
-}
 @media only screen and (orientation: landscape) {
   #center {
-    max-width: 500px;  
+    max-width: 500px;
+    max-height: 80px;
+    width: 100%;
+    height: 100%;
   }
 }
 
 @media only screen and (orientation: portrait) {
   #center {
+    max-height: 80px;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -43,7 +43,7 @@ body {
   border: none;
   width: 100%;
   height: 100%;
-  font-size: 140%;
+  font-size: 20px;
   font-weight: bold;
   outline: 0;
 }
@@ -68,7 +68,7 @@ body {
   background-color: transparent;
   grid-column: 2;
   grid-row: 1 / 6;
-  font-size: 250%;
+  font-size: 40px;
   color: #25a3ff;
   cursor: pointer;
   outline: none;
@@ -90,7 +90,7 @@ body {
 
 #placeholder {
   position: relative;
-  font-size: 140%;
+  font-size: 24px;
   bottom: 10mm;
   transition: 0.2s ease-in-out;
   pointer-events: none;
@@ -142,4 +142,3 @@ body {
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
     0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
 }
-
