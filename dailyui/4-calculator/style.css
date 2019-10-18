@@ -1,4 +1,4 @@
-#container {
+html {
     --background-color: #000;
     --text-color: #fefefe;
 
@@ -10,24 +10,36 @@
 
     --controls-color: #a5a5a5;
     --controls-selected-color: #d9d9d9;
+}
 
-    display: grid;
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-columns: auto auto auto auto;
+* { 
+    box-sizing: border-box;
 }
 
 body, html, #container {
-    width: 100%;
-    height: 100%;
     background-color: var(--background-color);
     margin: 0;
-    font-size: 40px;
-    font-family: "Helvetica Neue";
+    font-size: 50px;
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
 }
 
 #container {
-    width: 500px;
-    height: 750px;
+    grid-template-rows: 25vh 15vh 15vh 15vh 15vh 15vh;
+    grid-template-columns: 15vh 15vh 15vh 15vh;
+    display: grid;
+    width: 40vh;
+    height: 100vh;
+}
+
+.button {
+    border-radius: 50%;
+    margin: 10px 10px 10px 10px;
+    box-sizing: border-box;
 }
 
 .control {
@@ -44,20 +56,32 @@ body, html, #container {
 
 #result {
     grid-column: 1 / 5;
+    grid-row: 1 / 1;
+    color: white;
+    text-align: right;
+    padding: 40px 20px 0px 0px;
+    font-size: 90px
 }
 
 #zero {
     grid-column: 1 / 3;
+    border-radius: 1000px;
+    justify-content: left;
+    padding-left: 20px;
 }
 
 .button {
-    border-radius: 50%;
     color: white;
-    text-align: center;
-    line-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.number, .sign, .control {
-    height: 80px;
-    width: 80px;
+.control {
+    color: black;
+}
+
+.button :after {
+    content: "";
+    padding-bottom: 13.4%;
 }
