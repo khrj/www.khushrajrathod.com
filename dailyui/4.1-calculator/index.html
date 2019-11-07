@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <div id="result">0</div>
+        </div>
+
+        <div id="grid">
+            <div id="measure">
+                <div class="control item" id="clear">AC</div>
+            </div>
+            <div class="control item" id="sign" onclick="changeSign()">±</div>
+            <div class="control item" id="percent" onclick="percent()">%</div>
+            <div class="sign item" id="divide" onclick="divide()">÷</div>
+            <div class="number item" id="seven" onclick="seven()">7</div>
+            <div class="number item" id="eight" onclick="eight()">8</div>
+            <div class="number item" id="nine" onclick="nine()">9</div>
+            <div class="sign item" id="multiply" onclick="multiply()">×</div>
+            <div class="number item" id="four" onclick="four()">4</div>
+            <div class="number item" id="five" onclick="five()">5</div>
+            <div class="number item" id="six" onclick="six()">6</div>
+            <div class="sign item" id="minus" onclick="minus()">−</div>
+            <div class="number item" id="one" onclick="one()">1</div>
+            <div class="number item" id="two" onclick="two()">2</div>
+            <div class="number item" id="three" onclick="three()">3</div>
+            <div class="sign item" id="plus" onclick="plus()">+</div>
+            <div class="number item" id="zero" onclick="zero()">0</div>
+            <div class="number item" id="decimal" onclick="decimal()">.</div>
+            <div class="sign item" id="equals" onclick="equals()">=</div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.2.2/math.min.js'></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
