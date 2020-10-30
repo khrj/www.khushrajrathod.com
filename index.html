@@ -23,7 +23,8 @@
 </head>
 
 <body style="margin: 0;overflow-x: hidden;">
-    <section id="tsparticles" class="portfolio-block block-intro" style="filter: hue-rotate(0deg);">
+    <div id="tsparticles" style="background: url(&quot;https://cloud-jr0g7md0j.vercel.app/0background3.jpg&quot;);width: 100%;position: absolute;top: 0px;height: 100vh;"></div>
+    <section id="section1" class="portfolio-block block-intro" style="filter: hue-rotate(0deg);">
         <div class="container">
             <div class="pulse animated avatar" style="background-image: url(&quot;assets/img/avatar-gumwall.jpeg&quot;);filter: contrast(82%) grayscale(0%);/*width: 300px;*//*height: 300px;*//*border-radius: 100px;*/"></div>
             <div class="about-me">
@@ -115,7 +116,8 @@
     </section>
     <section></section><script src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.4/dist/tsparticles.min.js"></script>
 <script>
-tsParticles.load("tsparticles", {tsParticles.load("intro", {
+document.getElementById("tsparticles").style.height = document.getElementById("section1").offsetHeight + 'px'
+tsParticles.load("tsparticles", {
     background: {
         color: {
             value: ""
@@ -149,7 +151,7 @@ tsParticles.load("tsparticles", {tsParticles.load("intro", {
         stages: []
     },
     interactivity: {
-        detectsOn: "parent",
+        detectsOn: "window",
         events: {
             onClick: {
                 enable: true,
@@ -402,7 +404,13 @@ particles.play();
 </script>
     <div class="footer-basic">
         <footer>
-            <div class="social"><a href="https://github.com/KhushrajRathod"><i class="icon ion-social-github"></i></a><a href="mailto:khushrajrathod@gmail.com"><i class="icon ion-android-mail"></i></a><a href="https://t.me/KhushrajRathod"><i class="fab fa-telegram-plane"></i></a></div>
+            <div class="social"><a href="https://github.com/KhushrajRathod"><i class="icon ion-social-github"></i></a><a href="mailto:khushrajrathod@gmail.com"><i class="icon ion-android-mail"></i></a><a href="https://t.me/KhushrajRathod"><i class="fab fa-telegram-plane"></i></a></div><div id="webring-wrapper">
+  <a href="https://webring.hackclub.com/" id="previousBtn" class="webring-anchor" title="Previous">‹</a>
+  <a href="https://webring.hackclub.com/" class="webring-logo" title="Hack Club Webring" alt="Hack Club Webring"></a>
+  <a href="https://webring.hackclub.com/" id="nextBtn" class="webring-anchor" title="Next">›</a>
+  <script src="https://webring.hackclub.com/public/embed.min.js"></script>
+</div>
+
             <p
                 class="copyright">Khushraj Rathod © 2020</p>
         </footer>
