@@ -1,0 +1,2 @@
+build/* filter=lfs diff=lfs merge=lfs -text
+*.bsdesign filter=lfs diff=lfs merge=lfs -text
