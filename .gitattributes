@@ -1,2 +1,5 @@
-build/* filter=lfs diff=lfs merge=lfs -text
-*.bsdesign filter=lfs diff=lfs merge=lfs -text
+build/*		filter=lfs diff=lfs merge=lfs -text
+*.bsdesign	filter=lfs diff=lfs merge=lfs -text
+*.html		filter= diff= merge= text
+*.json		filter= diff= merge= text
+*.xml		filter= diff= merge= text
